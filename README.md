@@ -1,6 +1,6 @@
 # Django Pipeline Compass
 
-django-pipeline-compass is a [Compass](http://compass-style.org/) compiler for django-pipeline.
+[Compass](http://compass-style.org/) compiler for django-pipeline.
 
 ## Requirements
 
