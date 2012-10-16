@@ -1,0 +1,4 @@
+._*
+.DS_Store
+dist
+django_pipeline_compass.egg-info
