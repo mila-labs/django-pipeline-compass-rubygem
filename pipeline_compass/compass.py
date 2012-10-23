@@ -13,8 +13,8 @@ class CompassCompiler(SubProcessCompiler):
         command = "%s compile --sass-dir=%s --css-dir=%s %s %s" % (
             getattr(settings, 'PIPELINE_COMPASS_BINARY', '/usr/bin/env compass'),
             dirname(infile),
-            getattr(settings, 'PIPELINE_COMPASS_ARGUMENTS', ''),
             dirname(outfile),
+            getattr(settings, 'PIPELINE_COMPASS_ARGUMENTS', ''),
             infile
         )
         return self.execute_command(command, cwd=dirname(infile))

@@ -7,7 +7,7 @@ django-pipeline-compass is a Compass compiler for django-pipeline.
 
 setup(
     name='django-pipeline-compass',
-    version='0.1.1',
+    version='0.1.2',
     description=description,
     long_description=description,
     author='Patrick Stadler',
