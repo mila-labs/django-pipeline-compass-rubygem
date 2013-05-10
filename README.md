@@ -1,6 +1,6 @@
 # Django Pipeline Compass
 
-[Compass](http://compass-style.org/) compiler for django-pipeline using the original Ruby gem.
+[Compass](http://compass-style.org/) compiler for django-pipeline using the original Ruby Gem.
 
 ## Requirements
 
@@ -9,6 +9,10 @@
 ## Installation
 
 ```
+# from PyPi
+pip install django-pipeline-compass-rubygem
+
+# from GitHub
 pip install git+https://github.com/mila-labs/django-pipeline-compass.git
 ```
 
