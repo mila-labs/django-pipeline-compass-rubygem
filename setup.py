@@ -12,7 +12,7 @@ setup(
     long_description=open('README.rst').read(),
     author='Patrick Stadler',
     author_email='patrick.stadler@gmail.com',
-    url='https://github.com/mila-labs/django-pipeline-compass',
+    url='https://github.com/mila-labs/django-pipeline-compass-rubygem',
     license='MIT License',
     platforms=['OS Independent'],
     packages=find_packages(),

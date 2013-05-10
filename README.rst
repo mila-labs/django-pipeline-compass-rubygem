@@ -17,7 +17,7 @@ Installation
     $ pip install django-pipeline-compass-rubygem
 
     # from GitHub
-    $ pip install git+https://github.com/mila-labs/django-pipeline-compass.git
+    $ pip install git+https://github.com/mila-labs/django-pipeline-compass-rubygem.git
 
 Usage
 -----
