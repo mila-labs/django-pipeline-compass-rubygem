@@ -22,14 +22,16 @@ Installation
 Usage
 -----
 
+COMPASS_BINARY and COMPASS_ARGUMENTS can be either a string or a list/tuple.
+
 .. code-block:: python
 
     # settings.py
 
-    PIPELINE_COMPASS_BINARY = '/usr/local/bin/compass'   # default: '/usr/bin/env compass'
-    PIPELINE_COMPASS_ARGUMENTS = '-c path/to/config.rb'  # default: ''
+    PIPELINE['COMPASS_BINARY'] = '/usr/local/bin/compass'        # default: ['/usr/bin/env', 'compass']
+    PIPELINE['COMPASS_ARGUMENTS'] = ['-c', 'path/to/config.rb']  # default: []
 
-    PIPELINE_COMPILERS = (
+    PIPELINE['COMPILERS'] = (
       'pipeline_compass.compass.CompassCompiler',
     )
 
