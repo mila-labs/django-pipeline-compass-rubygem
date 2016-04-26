@@ -10,11 +10,13 @@ class CompassCompiler(SubProcessCompiler):
         return filename.endswith(('.scss', '.sass'))
 
     def compile_file(self, infile, outfile, outdated=False, force=False):
-        command = "%s compile --boring --sass-dir=%s --css-dir=%s %s %s" % (
-            getattr(settings, 'PIPELINE_COMPASS_BINARY', '/usr/bin/env compass'),
-            dirname(infile),
-            dirname(outfile),
-            getattr(settings, 'PIPELINE_COMPASS_ARGUMENTS', ''),
+        conf = getattr(settings, 'PIPELINE', {})
+        command = [
+            conf.get('COMPASS_BINARY', ['/usr/bin/env', 'compass']),
+            "compile", "--boring",
+            "--sass-dir=%s" % dirname(infile),
+            "--css-dir=%s" % dirname(outfile),
+            conf.get('COMPASS_ARGUMENTS', []),
             infile
-        )
+        ]
         return self.execute_command(command, cwd=dirname(infile))
